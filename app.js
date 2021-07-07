@@ -32,7 +32,7 @@ Dog.prototype.print = function () {
 
 };
 
-var dog = new Dog("Petrica", "Božica");
+var dog = new Dog("Petrica", "Božica"); 
 console.log(dog);
 dog.bark(5);
 dog.print();
