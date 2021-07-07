@@ -24,7 +24,7 @@ Dog.prototype.bark = function (barkCount) {
 };
 
 Dog.prototype.print = function () {
-    if (this.name === undefined) {
+    if (this.name !== undefined) {
         console.log("Psić iz našeg zadatka zove se " + this.name + ", a njegov vlasnik je " + this.owner + "!");
     } else {
         console.log("Ime psića je nepoznato!")
@@ -32,7 +32,7 @@ Dog.prototype.print = function () {
 
 };
 
-var dog = new Dog();
+var dog = new Dog("Petrica", "Božica");
 console.log(dog);
 dog.bark(5);
 dog.print();
